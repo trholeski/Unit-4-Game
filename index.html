@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/css-reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"                      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12 boxes" id="title"> Crystal Collector</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 boxes" id="instructions"> <p>You will be given a random number at th start of the game.<br><br>
+            There are four crystals below.  By clicking any of the crystals you will add a specific but unkown amount to your score.<br><br>
+            You win the game by matching your total score to the randmon number.  You loe the game if your total score goes above the random number.<br><br>
+            Each time the game restarts , after winning or losing, the random number as well as the value of each of the jewels changes.<br><br>
+            Good luck!</p>
+            </div>
+            <div class="col-md-4 boxes" id="results"> Results:
+                <div class="row">
+                    <div class="col-md-12 boxes" id="declaration"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 boxes" id="wins"> wins:</div>
+                    <div class="col-md-12 boxes" id="numWins">0</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 boxes" id="losses"> losses:</div>
+                    <div class="col-md-12 boxes" id="numLosses">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 boxes" id="randomNumber"> </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 boxes" onclick="clickedJewel(this);" id="jewelValue0"><img class="jewel-img" src="assets/images/ruby.jpg" alt=""></div>
+            <div class="col-md-3 boxes" onclick="clickedJewel(this);" id="jewelValue1"><img class="jewel-img" src="assets/images/emerald.jpeg" alt=""></div>
+            <div class="col-md-3 boxes" onclick="clickedJewel(this);" id="jewelValue2"><img class="jewel-img" src="assets/images/diamond2.jpg" alt=""></div>
+            <div class="col-md-3 boxes" onclick="clickedJewel(this);" id="jewelValue3"><img class="jewel-img" src="assets/images/saphire.jpg" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 boxes" id="userTotal">user total</div>
+        </div> 
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+</body>
+</html>

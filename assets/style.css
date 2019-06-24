@@ -1,0 +1,11 @@
+.boxes{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.jewel-img {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
